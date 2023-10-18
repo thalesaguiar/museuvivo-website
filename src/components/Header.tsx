@@ -7,11 +7,11 @@ export default function Header() {
       <div className={styles.logo}>
         <img src="/logo2.png" className={styles.logo} />
       </div>
-      <div className={styles.navMenu}>
+      <span className={styles.navMenu}>
         <a>Visite</a>
         <a>Apoie</a>
         <a>Sobre</a>
-      </div>
+      </span>
     </div>
   );
 }
