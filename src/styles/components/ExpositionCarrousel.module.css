@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.carroussel{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-top: 34px;
+  margin-right: 21px;
+  margin-left: 102px;
+  margin-bottom: 122px;
+  max-width: auto;
+}
+
+.container > h2 {
+  font-size: 32px;
+  margin-left: 102px;
+}
+
+.carroussel > img {
+  flex-direction: row;
+  width: 550px;
+  height: 340px;
+  
+}
+
+.currentImage {
+  border-radius: 10px;
+  margin-right: 21px;
+  cursor: pointer;
+}
+
+.nextImage {
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.carroussel > button {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  cursor: pointer;
+}
+
+.carroussel > button > img{
+  width: 40px;
+}
+
+.carroussel > button :hover {
+  width: 50px;
+}
