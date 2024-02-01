@@ -4,7 +4,7 @@ import Image from "next/image";
 import Logo from "../../../public/LOGOM.svg";
 import MenuSvg from "../../../public/menu.svg";
 import Link from "next/link";
-import NavMobile from "../HamburgerMenu/Hamburguer";
+import NavMobile from "../HamburgerMenu/NavMobile";
 
 export default function Header() {
   return (
