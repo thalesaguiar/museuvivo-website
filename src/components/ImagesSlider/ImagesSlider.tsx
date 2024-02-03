@@ -19,6 +19,7 @@ export default function ImagesSlider() {
         alt="Fachada do Museu Vivo"
         fill
         style={{ objectFit: "cover" }}
+        quality={75}
       />
 
       <h2
