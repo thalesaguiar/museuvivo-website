@@ -1,0 +1,19 @@
+.container {
+  border-color: #fff;
+  background-color: #ffffff00;
+  border-style: solid;
+  border-width: 1.5px;
+  position: absolute;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 10rem;
+  font-family: Junge;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: #ffffff;
+  color: black;
+}
