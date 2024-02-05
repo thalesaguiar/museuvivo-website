@@ -67,52 +67,7 @@ export default function Header() {
           />
         </div>
       </div>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className={styles.hambuerguerMenuWrapper}
-          >
-            <div
-              style={{
-                display: "flex",
-                marginTop: "100px",
-                width: "100%",
-                backgroundColor: "red",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div>
-                {route.map((route) => {
-                  const { Icon } = route;
-
-                  return (
-                    <p
-                      key={route.title}
-                      style={{
-                        color: "#fff",
-                        fontSize: "2rem",
-                      }}
-                    >
-                      <a
-                        onClick={() => setOpen((prev) => !prev)}
-                        href={route.href}
-                      >
-                        <span>{route.title}</span>
-                        <Icon />
-                      </a>
-                    </p>
-                  );
-                })}
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {isOpen}
     </header>
   );
 }

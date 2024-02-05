@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  align-self: flex-start;
   background-color: #1a2a5a;
   width: 100%;
   height: 6rem;
@@ -38,7 +39,7 @@
 }
 
 .hambuerguerMenuWrapper {
-  position: fixed;
+  position: absolute;
   width: 100vh;
   height: 30rem;
   background-color: #1a2a5a;
