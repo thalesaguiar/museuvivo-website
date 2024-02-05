@@ -1,6 +1,23 @@
 .container {
   display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.imageWrapper {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 70/40;
+}
+
+.sectionWrapper {
+  display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  position: relative;
+  margin-top: 100px;
 }
