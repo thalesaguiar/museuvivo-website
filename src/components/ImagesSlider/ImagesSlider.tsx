@@ -1,27 +1,32 @@
+"use client";
+
+import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
-import MuseumPic from "../../../public/museumE.png";
+import MuseumPic from "../../../public/museum1x.jpg";
+import MuseumPic2 from "../../../public/museum2x.jpg";
 import styles from "./ImagesSlider.module.css";
-import FrontPic from "../../../public/museumE.jpg";
 import Button from "../Button";
 
 export default function ImagesSlider() {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <div className={styles.container}>
-      <div className={styles.imageWrapper}>
-        <Image src={FrontPic} alt="Fachada do Museu Vivo" fill quality={75} />
-      </div>
+      <picture>
+        <source media="/museum1x.jpg" srcSet="/museum2x.jpg 800w" />
+
+        <Image
+          src={isMobile ? MuseumPic2 : MuseumPic}
+          alt="Fachada do Museu Vivo"
+          fill
+          quality={75}
+          style={{ objectFit: "cover", overflow: "hidden" }}
+        />
+      </picture>
       <div className={styles.sectionWrapper}>
-        <p
-          style={{
-            color: "#fff",
-            fontSize: "3rem",
-            textAlign: "center",
-          }}
-        >
-          ΓNΩθΙ ΣΕΑΥΤΟΝ
-        </p>
-        <Button />
+        <p>ΓNΩθΙ ΣΕΑΥΤΟΝ</p>
       </div>
+      <Button />
     </div>
   );
 }
