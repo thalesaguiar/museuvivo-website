@@ -53,3 +53,17 @@
   object-fit: "cover";
   overflow: "hidden";
 }
+
+@media (max-width: 768px) {
+  .desktopContainer {
+    display: none !important;
+    position: absolute;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileContainer {
+    display: none !important;
+    position: absolute;
+  }
+}
