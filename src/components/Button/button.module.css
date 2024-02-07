@@ -1,20 +1,20 @@
-@media (max-width: 426px) {
+@media (min-width: 150px) {
   .container {
     border-color: #fff;
-    background-color: #ffffff00;
+    background-color: #ca000000;
     border-style: solid;
     border-width: 1.5px;
     position: absolute;
     padding: 10px;
     border-radius: 4px;
     color: #fff;
-    font-size: 1.5rem;
-    margin-top: 10rem;
+    font-size: 1rem;
+    margin-top: 3rem;
     font-family: Junge;
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 600px) {
   .container {
     border-color: #ffffff;
     background-color: #ffffff00;
@@ -24,7 +24,7 @@
     padding: 10px;
     border-radius: 4px;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-top: 10rem;
     margin-bottom: 4rem;
     font-family: Junge;
@@ -41,14 +41,15 @@
     padding: 10px;
     border-radius: 4px;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-top: 10rem;
     margin-bottom: 4rem;
     font-family: Junge;
+    cursor: pointer;
   }
 }
 
 .container:hover {
   background-color: #ffffff;
-  color: black;
+  color: #6b4b22;
 }
