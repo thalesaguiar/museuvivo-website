@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "./NavBar.module.css";
+import styles from "./Menu.module.css";
 import Image from "next/image";
 import Logo from "../../../public/LOGOM.svg";
 import MenuSvg from "../../../public/menu.svg";
@@ -33,7 +33,7 @@ const route = [
   },
 ];
 
-export default function Header() {
+export default function Menu() {
   const [isOpen, setOpen] = useState(false);
   const ref = useRef(null);
 

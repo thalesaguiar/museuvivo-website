@@ -1,0 +1,13 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 2rem;
+  gap: 10px;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
