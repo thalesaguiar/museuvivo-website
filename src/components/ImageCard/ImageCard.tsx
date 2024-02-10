@@ -21,61 +21,65 @@ export default function ImageCard() {
           <Image
             alt="CardImage"
             src={CardImg1}
-            quality={80}
+            quality={70}
             width={280}
             height={140}
           />
-          <h3>Indíos Botocudos</h3>
+          <h3 className={style.expositionName}>Indíos Botocudos</h3>
         </div>
         <div>
           <Image
             alt="CardImage"
             src={CardImg6}
-            quality={80}
+            quality={70}
             width={280}
             height={140}
           />
-          <h3>Tropeiros</h3>
+          <h3 className={style.expositionName}>Tropeiros</h3>
         </div>
         <div>
           <Image
             alt="CardImage"
             src={CardImg2}
-            quality={80}
+            quality={70}
             width={280}
             height={140}
           />
-          <h3>Carvoeiros</h3>
+          <h3 className={style.expositionName}>Carvoeiros</h3>
         </div>
         <div>
           <Image
             alt="CardImage"
             src={CardImg3}
-            quality={80}
+            quality={70}
             width={280}
             height={140}
           />
-          <h3>Estrada de Ferro Vitória Minas</h3>
+          <h3 className={style.expositionName}>
+            Estrada de Ferro Vitória Minas
+          </h3>
         </div>
         <div>
           <Image
             alt="CardImage"
             src={CardImg4}
-            quality={80}
+            quality={70}
             width={280}
             height={140}
           />
-          <h3>Pioneiros e Primeiras Fazendas</h3>
+          <h3 className={style.expositionName}>
+            Pioneiros e Primeiras Fazendas
+          </h3>
         </div>
         <div>
           <Image
             alt="CardImage"
             src={CardImg5}
-            quality={80}
+            quality={70}
             width={280}
             height={140}
           />
-          <h3>Forja</h3>
+          <h3 className={style.expositionName}>Forja</h3>
         </div>
       </div>
       {/* Desktop */}
@@ -84,7 +88,7 @@ export default function ImageCard() {
           <Image
             alt="CardImage"
             src={CardImg1T}
-            quality={80}
+            quality={70}
             width={600}
             height={337}
           />
@@ -94,7 +98,7 @@ export default function ImageCard() {
           <Image
             alt="CardImage"
             src={CardImg6T}
-            quality={80}
+            quality={70}
             width={600}
             height={337}
           />
@@ -104,7 +108,7 @@ export default function ImageCard() {
           <Image
             alt="CardImage"
             src={CardImg2T}
-            quality={80}
+            quality={70}
             width={600}
             height={337}
           />
@@ -114,7 +118,7 @@ export default function ImageCard() {
           <Image
             alt="CardImage"
             src={CardImg3T}
-            quality={80}
+            quality={70}
             width={600}
             height={337}
           />
@@ -124,7 +128,7 @@ export default function ImageCard() {
           <Image
             alt="CardImage"
             src={CardImg4T}
-            quality={80}
+            quality={70}
             width={600}
             height={337}
           />
@@ -134,7 +138,7 @@ export default function ImageCard() {
           <Image
             alt="CardImage"
             src={CardImg5T}
-            quality={80}
+            quality={70}
             width={600}
             height={337}
           />
