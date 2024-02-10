@@ -77,10 +77,10 @@ export default function InfoCard() {
               margin: 0,
             }}
           >
-            <strong>
+            {/* <strong>
               (Preço promocional para o ano de 2024, ano do anivérsário de
               Ipatinga.Todos pagam meia entrada.)
-            </strong>
+            </strong> */}
           </p>
 
           <p
