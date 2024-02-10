@@ -27,6 +27,7 @@
     overflow-x: scroll;
     padding: 2rem;
     gap: 10px;
+    margin-left: 40px;
   }
 }
 

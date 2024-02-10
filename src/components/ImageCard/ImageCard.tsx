@@ -85,8 +85,8 @@ export default function ImageCard() {
             alt="CardImage"
             src={CardImg1T}
             quality={80}
-            width={700}
-            height={380}
+            width={600}
+            height={337}
           />
           <h3>Indíos Botocudos</h3>
         </div>
@@ -95,8 +95,8 @@ export default function ImageCard() {
             alt="CardImage"
             src={CardImg6T}
             quality={80}
-            width={700}
-            height={380}
+            width={600}
+            height={337}
           />
           <h3>Tropeiros</h3>
         </div>
@@ -105,8 +105,8 @@ export default function ImageCard() {
             alt="CardImage"
             src={CardImg2T}
             quality={80}
-            width={700}
-            height={380}
+            width={600}
+            height={337}
           />
           <h3>Carvoeiros</h3>
         </div>
@@ -115,8 +115,8 @@ export default function ImageCard() {
             alt="CardImage"
             src={CardImg3T}
             quality={80}
-            width={700}
-            height={380}
+            width={600}
+            height={337}
           />
           <h3>Estrada de Ferro Vitória Minas</h3>
         </div>
@@ -125,8 +125,8 @@ export default function ImageCard() {
             alt="CardImage"
             src={CardImg4T}
             quality={80}
-            width={700}
-            height={380}
+            width={600}
+            height={337}
           />
           <h3>Pioneiros e Primeiras Fazendas</h3>
         </div>
@@ -135,8 +135,8 @@ export default function ImageCard() {
             alt="CardImage"
             src={CardImg5T}
             quality={80}
-            width={700}
-            height={380}
+            width={600}
+            height={337}
           />
           <h3>Forja</h3>
         </div>
