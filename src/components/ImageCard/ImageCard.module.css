@@ -8,6 +8,10 @@
     padding: 2rem;
     gap: 10px;
   }
+  .expositionName {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
 }
 
 .sliderTablet::-webkit-scrollbar {
