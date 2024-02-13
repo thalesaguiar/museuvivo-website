@@ -73,18 +73,6 @@ export default function InfoCard() {
           </p>
           <p
             style={{
-              fontSize: "1.8rem",
-              margin: 0,
-            }}
-          >
-            {/* <strong>
-              (Preço promocional para o ano de 2024, ano do anivérsário de
-              Ipatinga.Todos pagam meia entrada.)
-            </strong> */}
-          </p>
-
-          <p
-            style={{
               fontSize: "1.2rem",
               fontWeight: "bold",
               margin: 0,
