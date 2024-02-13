@@ -59,7 +59,7 @@ export default function InfoCard() {
         <div style={{ padding: "10px" }}>
           <h4 style={{ fontSize: "2rem", margin: 0 }}>Ingressos</h4>
           <p style={{ fontSize: "1.8rem", margin: 0 }}>
-            Meia Entrada: R$20,00
+            Meia: R$20,00
             <br />
           </p>
           <p
@@ -69,7 +69,7 @@ export default function InfoCard() {
               margin: 0,
             }}
           >
-            Entrada: R$40,00
+            Inteira: R$40,00
           </p>
           <p
             style={{
