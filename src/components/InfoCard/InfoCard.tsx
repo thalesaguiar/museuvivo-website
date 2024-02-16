@@ -11,26 +11,44 @@ const element = <FontAwesomeIcon icon={faClock} />;
 export default function InfoCard() {
   return (
     <div className={style.container}>
-      <div className={style.infoContainer}>
-        <div style={{ margin: "20px" }}>
-          <FontAwesomeIcon
-            icon={faClock}
-            width={20}
-            height={30}
-            color="#1C3162"
-          />
+      <div className={style.infoContainerWraper}>
+        <div className={style.infoContainer}>
+          <div style={{ margin: "20px" }}>
+            <FontAwesomeIcon
+              icon={faClock}
+              width={20}
+              height={30}
+              color="#1C3162"
+            />
+          </div>
+          <div style={{ padding: "10px" }}>
+            <h4 style={{ fontSize: "2rem", margin: 0 }}>
+              Abrimos Sexta, Sábado, Domingo e feriados.
+            </h4>
+            <p style={{ fontSize: "1.8rem", margin: 0 }}>
+              Horários: Sexta 18:30 as 21:00 <br /> Sábado e Domingo 8:00 as
+              12:00 e 14:00 as 18:00.
+            </p>
+          </div>
         </div>
-        <div style={{ padding: "10px" }}>
-          <h4 style={{ fontSize: "2rem", margin: 0 }}>
-            Abrimos Sexta, Sábado, Domingo e feriados.
-          </h4>
-          <p style={{ fontSize: "1.8rem", margin: 0 }}>
-            Horários: Sexta 18:30 as 21:00 <br /> Sábado e Domingo 8:00 as 12:00
-            e 14:00 as 18:00.
-          </p>
+        <div className={style.infoContainer}>
+          <div style={{ margin: "20px" }}>
+            <FontAwesomeIcon
+              icon={faMapLocationDot}
+              width={20}
+              height={30}
+              color="#1C3162"
+            />
+          </div>
+          <div style={{ padding: "10px" }}>
+            <h4 style={{ fontSize: "2rem", margin: 0 }}>Localização</h4>
+            <p style={{ fontSize: "1.8rem", margin: 0 }}>
+              Rua água potável 398 A, Bairro das Fontes, Ipatinga-MG <br />{" "}
+              Telefone: +55(31)98607-6883
+            </p>
+          </div>
         </div>
-      </div>
-      <div className={style.infoContainer}>
+        {/* <div className={style.infoContainer}>
         <div style={{ margin: "20px" }}>
           <FontAwesomeIcon
             icon={faMapLocationDot}
@@ -39,48 +57,49 @@ export default function InfoCard() {
             color="#1C3162"
           />
         </div>
-        <div style={{ padding: "10px" }}>
+        <div style={{ padding: "10px", width: "100%" }}>
           <h4 style={{ fontSize: "2rem", margin: 0 }}>Localização </h4>
           <p style={{ fontSize: "1.8rem", margin: 0 }}>
             Rua água potável 398 A <br />
             Bairro das Fontes, Ipatinga-MG <br /> Telefone: +55(31)98607-6883
           </p>
         </div>
-      </div>
-      <div className={style.infoContainer}>
-        <div style={{ margin: "20px" }}>
-          <FontAwesomeIcon
-            icon={faTicket}
-            width={20}
-            height={30}
-            color="#1C3162"
-          />
-        </div>
-        <div style={{ padding: "10px" }}>
-          <h4 style={{ fontSize: "2rem", margin: 0 }}>Ingressos</h4>
-          <p style={{ fontSize: "1.8rem", margin: 0 }}>
-            Meia: R$20,00
-            <br />
-          </p>
-          <p
-            style={{
-              textDecoration: "line-through",
-              fontSize: "1.8rem",
-              margin: 0,
-            }}
-          >
-            Inteira: R$40,00
-          </p>
-          <p
-            style={{
-              fontSize: "1.2rem",
-              fontWeight: "bold",
-              margin: 0,
-            }}
-          >
-            Menores de 18 anos entram apenas acompanhados pelos pais ou
-            professores
-          </p>
+      </div> */}
+        <div className={style.infoContainer}>
+          <div style={{ margin: "20px" }}>
+            <FontAwesomeIcon
+              icon={faTicket}
+              width={20}
+              height={30}
+              color="#1C3162"
+            />
+          </div>
+          <div style={{ padding: "10px" }}>
+            <h4 style={{ fontSize: "2rem", margin: 0 }}>Ingressos</h4>
+            <p style={{ fontSize: "1.8rem", margin: 0 }}>
+              Meia: R$20,00
+              <br />
+            </p>
+            <p
+              style={{
+                textDecoration: "line-through",
+                fontSize: "1.8rem",
+                margin: 0,
+              }}
+            >
+              Inteira: R$40,00
+            </p>
+            <p
+              style={{
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                margin: 0,
+              }}
+            >
+              Menores de 18 anos entram apenas acompanhados pelos pais ou
+              professores
+            </p>
+          </div>
         </div>
       </div>
       <iframe
