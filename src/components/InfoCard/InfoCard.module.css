@@ -37,8 +37,40 @@
   }
   .infoContainer {
     display: flex;
-    width: 30%;
+    width: 70%;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 25px;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .googleMaps {
+    border: none;
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    margin-bottom: 140px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 60px;
+  }
+  .infoContainer {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
   }
   .title {
@@ -48,12 +80,9 @@
 
   .googleMaps {
     border: none;
-    width: 60%;
+    width: 900px;
     height: 400px;
     padding: 15px;
-    margin-bottom: 140px;
-  }
-
-  .infoContainerWraper {
+    margin-bottom: 50px;
   }
 }
