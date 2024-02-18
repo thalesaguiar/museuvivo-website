@@ -18,7 +18,12 @@ export default function MainSection() {
             marginTop: "50px",
           }}
         >
-          <p style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+          <p
+            style={{
+              fontSize: "2.5rem",
+              fontWeight: "bold",
+            }}
+          >
             Em <br />
             Exposição
           </p>
