@@ -46,6 +46,16 @@
     margin-bottom: 4rem;
     font-family: Junge;
     cursor: pointer;
+    animation-name: fadein;
+    animation-duration: 3.5s;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+    }
   }
 }
 
