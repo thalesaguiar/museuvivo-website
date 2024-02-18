@@ -30,19 +30,7 @@ export default function Header() {
         />
       </div>
       <div className={styles.textWrapper}>
-        <span className={styles.letter}>Γ</span>
-        <span className={styles.letter}>N</span>
-        <span className={styles.letter}>Ω</span>
-        <span className={styles.letter}>θ</span>
-        <span className={styles.letter}>Ι</span>
-        <span className={styles.letter}> </span>
-        <span className={styles.letter}>Σ</span>
-        <span className={styles.letter}>Ε</span>
-        <span className={styles.letter}>Α</span>
-        <span className={styles.letter}>Υ</span>
-        <span className={styles.letter}>Τ</span>
-        <span className={styles.letter}>Ο</span>
-        <span className={styles.letter}>Ν</span>
+        <p className={styles.letter}>ΓNΩθΙ ΣΕΑΥΤΟΝ</p>
       </div>
       <Button />
     </div>
