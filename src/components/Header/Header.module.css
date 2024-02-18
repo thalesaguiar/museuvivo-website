@@ -65,6 +65,13 @@
   .letter:focus {
     color: #fdc017;
   }
+  @keyframes slide-bottom {
+    from {
+      margin-top: 400px;
+    }
+    to {
+    }
+  }
 }
 
 .image {
@@ -89,6 +96,7 @@
 .textWrapper {
   position: relative;
   margin-bottom: 4rem;
-  flex-direction: row;
   cursor: pointer;
+  animation-duration: 2s;
+  animation-name: slide-bottom;
 }
