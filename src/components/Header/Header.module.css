@@ -94,9 +94,26 @@
 }
 
 .textWrapper {
-  position: relative;
+  position: absolute;
   margin-bottom: 4rem;
   cursor: pointer;
   animation-duration: 2s;
   animation-name: slide-bottom;
+}
+
+.videoWrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.iframe {
+  display: flex;
+  height: 1000px;
+  visibility: visible;
+  width: 1920px;
 }
