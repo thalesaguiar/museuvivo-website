@@ -26,8 +26,8 @@ export default function InfoCard() {
               Abrimos Sexta, Sábado, Domingo e feriados.
             </h4>
             <p style={{ fontSize: "1.8rem", margin: 0 }}>
-              Horários: Sexta 18:30 as 21:00 <br /> Sábado e Domingo 8:00 as
-              12:00 e 14:00 as 18:00.
+              Horários: Sexta 18:30 as 21:00 <br /> Sábado, Domingo e Feriados
+              8:00 as 12:00 e 14:00 as 18:00.
             </p>
           </div>
         </div>
@@ -91,13 +91,13 @@ export default function InfoCard() {
             </p>
             <p
               style={{
-                fontSize: "1.2rem",
+                fontSize: "1.4rem",
                 fontWeight: "bold",
                 margin: 0,
               }}
             >
-              Menores de 18 anos entram apenas acompanhados pelos pais ou
-              professores
+              Menores de 16 anos entram apenas acompanhados pelos pais ou
+              professores.
             </p>
           </div>
         </div>
