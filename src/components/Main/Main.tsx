@@ -22,6 +22,7 @@ export default function MainSection() {
             style={{
               fontSize: "2.5rem",
               fontWeight: "bold",
+              marginLeft: 35,
             }}
           >
             Em <br />
