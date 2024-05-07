@@ -18,7 +18,11 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function ImageCard() {
   return (
     <>
-      <div className={style.sliderMobile}>
+      <div
+        className={
+          "w-full relative flex overflow-hidden flex-nowrap gap-3 p-8 ml-10"
+        }
+      >
         <div>
           <Image
             alt="CardImage"
@@ -86,7 +90,7 @@ export default function ImageCard() {
       </div>
       {/* Desktop */}
 
-      <div className={style.sliderTablet}>
+      {/* <div className={style.sliderTablet}>
         <div>
           <div className={style.Button}>
             <FontAwesomeIcon
@@ -164,7 +168,7 @@ export default function ImageCard() {
           />
           <h3 className={style.expositionName}>Forja</h3>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
