@@ -13,7 +13,7 @@ export default function Home() {
         únicas. Originários da região que hoje compreende principalmente os
         estados de Minas Gerais e Espírito Santo, os Botocudos receberam esse
         nome devido ao costume de utilizar discos labiais de madeira ou
-        cerâmica, chamados "batoques", que inseriam em seus lábios como forma de
+        cerâmica, chamados batoques, que inseriam em seus lábios como forma de
         adorno e identidade étnica. Esses discos, em diferentes tamanhos, eram
         considerados símbolos de beleza e status dentro da tribo. Eram um povo
         guerreiro e valente, que resistiu ferozmente à colonização portuguesa e
