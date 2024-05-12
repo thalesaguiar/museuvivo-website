@@ -13,7 +13,7 @@ import { Squash as Hamburger } from "hamburger-react";
 const route = [
   {
     title: "Inicio",
-    href: "#",
+    href: "/",
     Icon: "IconBase",
   },
   {
