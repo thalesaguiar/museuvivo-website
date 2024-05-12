@@ -1,13 +1,15 @@
 import Image from "next/image";
-import IMG from "../../../public/carvoeirocarrousel.png";
+import IMG from "../../../public/museum1x.jpg";
 import Img2 from "../../../public/IMG_20191116_155513-1024x592.jpg";
+import Menu from "@/components/Menu/Menu";
 export default function About() {
   return (
     <div>
+      <Menu />
       <section className="grid min-h-screen md:grid-cols-2">
-        <div className="bg-amber-50 flex flex-col justify-center items-center gap-2">
+        <div className="bg-amber-50 flex flex-col justify-center items-center gap-2 max-md:hidden">
           <div className="mb-5">
-            <h1 className="font-extrabold text-6xl tracking-tight">
+            <h1 className="font-extrabold text-6xl tracking-tight text-center">
               Sobre o Museu Vivo
             </h1>
           </div>
@@ -21,10 +23,24 @@ export default function About() {
         <div className="flex justify-center items-center">
           <Image src={IMG} alt="teste" className="w-full h-full object-cover" />
         </div>
+        <div className="bg-amber-50 flex flex-col justify-center items-center gap-2 sm:hidden">
+          <div className="mb-5">
+            <h1 className="font-extrabold text-5xl tracking-tight text-center">
+              Sobre o Museu Vivo
+            </h1>
+          </div>
+          <div className="m-4">
+            <p className="font-bold text-3xl tracking-wide text-center">
+              O Museu Vivo preserva e resgata a história de Ipatinga e de todo
+              Vale do Aço em Minas Gerais.
+            </p>
+          </div>
+        </div>
       </section>
       <section className="flex w-full bg-white">
-        <div className="pt-8 m-36">
-          <p className="text-4xl tracking-wide leading-relaxed">
+        <div className="p-10 sm:m-36">
+          <h2 className="text-5xl font-bold">Sobre o Museu</h2>
+          <p className="text-2xl tracking-wide leading-relaxed mt-8 text-start">
             O Museu Vivo guarda e preserva riquezas que conta a história de
             personagens anônimos das cidades do Vale do Aço e do Brasil. O
             projeto começou na década de 1980, com o objetivo de um dia fundar
@@ -33,36 +49,36 @@ export default function About() {
             decidiu buscar com os pioneiros e descobriu que a história da região
             era muito mais rica que se imaginava, desde então o Museu Vivo já
             reuniu mais de 10 mil peças referentes a história do Brasil e
-            principalmente a história local. O Museu Vivo é um museu com espaço
-            de exposições cíclico, temos o compromisso com o resgate cultural e
-            histórico, acreditamos que preservar o passado e usa-lo no presente
-            como ferramenta cultural e educacional é o principal passo na
-            construção do futuro.
+            principalmente a história local. <br />
+            <br />O Museu Vivo é um museu com espaço de exposições cíclico,
+            temos o compromisso com o resgate cultural e histórico, acreditamos
+            que preservar o passado e usa-lo no presente como ferramenta
+            cultural e educacional é o principal passo na construção do futuro.
           </p>
         </div>
       </section>
 
-      <div className="grid min-h-screen md:grid-cols-2 gap-11 m-36">
+      <div className="grid min-h-screen md:grid-cols-2 gap-11 max-md:36 p-10">
         <div>
-          <h2 className="text-5xl font-extrabold">O início</h2>
-          <p className="text-4xl tracking-wide leading-relaxed mt-8">
+          <h2 className="text-5xl font-bold">O início</h2>
+          <p className="text-2xl tracking-wide leading-relaxed mt-8 text-start">
             O projeto começou na década de 1980, com o colecionador Jeová
             Aguiar, baiano que escolheu as terras mineiras para morar. Ao Chegar
             na região do Vale do Aço o colecionador se deparou com uma ideia de
             que a região não possuía história então ele decidiu buscar com os
             pioneiros e descobriu que a história da região era muito mais rica
-            que se imaginava. então a partir dai ele se dedicou ao sonho de um
-            dia fundar um museu que não só exibisse as peças mas que fosse como
-            um ponto de encontro das gerações atuais e futuras com a história e
-            cultura do passado, através do acervo e das atividades desenvolvidas
-            nesse local.
+            que se imaginava. <br /> <br /> Então a partir dai ele se dedicou ao
+            sonho de um dia fundar um museu que não só exibisse as peças mas que
+            fosse como um ponto de encontro das gerações atuais e futuras com a
+            história e cultura do passado, através do acervo e das atividades
+            desenvolvidas nesse local.
           </p>
         </div>
         <Image src={Img2} alt="fig" />
       </div>
-      <div className="flex flex-col min-h-screen m-36">
-        <h2 className="text-5xl font-extrabold">O Acervo</h2>
-        <p className="text-4xl tracking-wide mt-8 leading-relaxed">
+      <div className="flex flex-col min-h-screen max-mdm:36 p-10">
+        <h2 className="text-5xl font-bold">O Acervo</h2>
+        <p className="text-2xl tracking-wide leading-relaxed mt-8 text-start">
           Descubra a história viva do Vale do Aço no Museu Metropolitano. Nosso
           acervo abrange uma ampla gama de temas, desde a rica cultura dos
           indígenas Botocudos até os caminhos percorridos pelos tropeiros.
