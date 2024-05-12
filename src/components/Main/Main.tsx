@@ -22,11 +22,9 @@ export default function MainSection() {
             style={{
               fontSize: "2.5rem",
               fontWeight: "bold",
-              marginLeft: 35,
             }}
           >
-            Em <br />
-            Exposição
+            Em exposição
           </p>
           {/* <p style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
           Veja todas as exposições
