@@ -13,7 +13,6 @@ type Props = {
   ImageFile: StaticImageData;
   Title: string;
   Description: string;
-  Size: string;
 };
 
 export default function ImageCarrousel({
