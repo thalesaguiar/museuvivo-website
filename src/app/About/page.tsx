@@ -111,14 +111,12 @@ export default function About() {
             Description="loren"
             Title="Sinaleiro"
             ImageFile={Img1}
-            Size="2xl"
           />
           <ImageCarrousel
             Description="Utilizado no transporte de mercadorias, produção agrícola e pessoas,
             fundamental para atravessar nas picadas e trilhas no meio do mato."
             Title="Carro de Bois"
             ImageFile={Img2a}
-            Size="2xl"
           />
           <ImageCarrousel
             Description="Peça fundamental usada pelos tropeiros para o transporte de
@@ -126,20 +124,17 @@ export default function About() {
             com as inscrições do nome do dono da tropa."
             Title="Canastras"
             ImageFile={Img3}
-            Size="2xl"
           />
           <ImageCarrousel
             Description="Relógio 8 utilizado na estação pedra mole nos anos de 1922 até os anos
           30."
             Title="Relógio 8"
             ImageFile={Img5}
-            Size="2xl"
           />
           <ImageCarrousel
             Description="Moedas de diferentes períodos da história do Brasil"
             Title="Moedas"
             ImageFile={Img6}
-            Size="2xl"
           />
         </div>
       </div>
@@ -150,7 +145,6 @@ export default function About() {
       <div className="flex w-full overflow-x-scroll no-scrollbar mb-20">
         <div className="flex">
           <ImageCarrousel
-            Size="4xl"
             Description="loren"
             Title="Sinaleiro"
             ImageFile={ImgAss1}
@@ -159,19 +153,16 @@ export default function About() {
             Description="loren"
             Title="Sinaleiro"
             ImageFile={ImgAss2}
-            Size="4xl"
           />
           <ImageCarrousel
             Description="loren"
             Title="Sinaleiro"
             ImageFile={ImgAss3}
-            Size="4xl"
           />
           <ImageCarrousel
             Description="loren"
             Title="Sinaleiro"
             ImageFile={ImgAss4}
-            Size="4xl"
           />
         </div>
       </div>
