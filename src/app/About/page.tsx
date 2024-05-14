@@ -2,9 +2,22 @@ import Image from "next/image";
 import IMG from "../../../public/museum1x.jpg";
 import Img2 from "../../../public/IMG_20191116_155513-1024x592.jpg";
 import Menu from "@/components/Menu/Menu";
+import ImageCard from "@/components/ImageCard/ImageCard";
+import ImageCarrousel from "@/components/Carrousel/ImageCarrousel";
+import Img1 from "../../../public/IMG_0900.png";
+import Img2a from "../../../public/IMG_20201202_194644_391.jpg";
+import Img3 from "../../../public/IMG_20201202_194846_355.jpg";
+import Img4 from "../../../public/IMG_20200904_142758_676.jpg";
+import Img5 from "../../../public/clock.png";
+import Img6 from "../../../public/coins2.png";
+import ImgAss1 from "../../../public/ass1.png";
+import ImgAss2 from "../../../public/ass2.png";
+import ImgAss3 from "../../../public/ass3.png";
+import ImgAss4 from "../../../public/ass6.png";
+
 export default function About() {
   return (
-    <div>
+    <div className="w-full">
       <Menu />
       <section className="grid min-h-screen md:grid-cols-2">
         <div className="bg-amber-50 flex flex-col justify-center items-center gap-2 max-md:hidden">
@@ -25,12 +38,12 @@ export default function About() {
         </div>
         <div className="bg-amber-50 flex flex-col justify-center items-center gap-2 sm:hidden">
           <div className="mb-5">
-            <h1 className="font-extrabold text-5xl tracking-tight text-center">
-              Sobre o Museu Vivo
+            <h1 className="font-extrabold text-7xl tracking-tight text-center">
+              Sobre o<br /> Museu Vivo
             </h1>
           </div>
           <div className="m-4">
-            <p className="font-bold text-3xl tracking-wide text-center">
+            <p className="font-bold text-2xl tracking-wide text-center">
               O Museu Vivo preserva e resgata a história de Ipatinga e de todo
               Vale do Aço em Minas Gerais.
             </p>
@@ -91,6 +104,76 @@ export default function About() {
           presente e um convite para o futuro. Junte-se a nós nesta jornada pela
           rica herança cultural do Vale do Aço.
         </p>
+      </div>
+      <div className="flex w-full overflow-x-scroll no-scrollbar mb-20">
+        <div className="flex w-96">
+          <ImageCarrousel
+            Description="loren"
+            Title="Sinaleiro"
+            ImageFile={Img1}
+            Size="2xl"
+          />
+          <ImageCarrousel
+            Description="Utilizado no transporte de mercadorias, produção agrícola e pessoas,
+            fundamental para atravessar nas picadas e trilhas no meio do mato."
+            Title="Carro de Bois"
+            ImageFile={Img2a}
+            Size="2xl"
+          />
+          <ImageCarrousel
+            Description="Peça fundamental usada pelos tropeiros para o transporte de
+            mercadorias e pedras preciosar nas trilhas do Brasil, sempre marcada
+            com as inscrições do nome do dono da tropa."
+            Title="Canastras"
+            ImageFile={Img3}
+            Size="2xl"
+          />
+          <ImageCarrousel
+            Description="Relógio 8 utilizado na estação pedra mole nos anos de 1922 até os anos
+          30."
+            Title="Relógio 8"
+            ImageFile={Img5}
+            Size="2xl"
+          />
+          <ImageCarrousel
+            Description="Moedas de diferentes períodos da história do Brasil"
+            Title="Moedas"
+            ImageFile={Img6}
+            Size="2xl"
+          />
+        </div>
+      </div>
+
+      <h2 className="text-4xl font-bold pl-10 mb-6">
+        A Associação Cultural Museu Vivo
+      </h2>
+      <div className="flex w-full overflow-x-scroll no-scrollbar mb-20">
+        <div className="flex">
+          <ImageCarrousel
+            Size="4xl"
+            Description="loren"
+            Title="Sinaleiro"
+            ImageFile={ImgAss1}
+          />
+          <ImageCarrousel
+            Description="loren"
+            Title="Sinaleiro"
+            ImageFile={ImgAss2}
+            Size="4xl"
+          />
+          <ImageCarrousel
+            Description="loren"
+            Title="Sinaleiro"
+            ImageFile={ImgAss3}
+            Size="4xl"
+          />
+          <ImageCarrousel
+            Description="loren"
+            Title="Sinaleiro"
+            ImageFile={ImgAss4}
+            Size="4xl"
+          />
+        </div>
       </div>
     </div>
   );
