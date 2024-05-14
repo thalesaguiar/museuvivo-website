@@ -20,11 +20,10 @@ export default function ImageCarrousel({
   ImageFile,
   Description,
   Title,
-  Size,
 }: Props) {
   return (
     <div
-      className={`flex flex-col flex-shrink-0 max-sm:max-w-md lg:max-w-${Size} p-5`}
+      className={`flex flex-col flex-shrink-0 max-sm:max-w-md lg:max-w-4xl p-5`}
     >
       <Image
         alt="CardImage"
