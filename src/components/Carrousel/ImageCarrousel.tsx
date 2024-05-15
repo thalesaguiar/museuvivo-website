@@ -11,8 +11,8 @@ import Link from "next/link";
 
 type Props = {
   ImageFile: StaticImageData;
-  Title: string;
-  Description: string;
+  Title?: string;
+  Description?: string;
 };
 
 export default function ImageCarrousel({
@@ -22,7 +22,7 @@ export default function ImageCarrousel({
 }: Props) {
   return (
     <div
-      className={`flex flex-col flex-shrink-0 max-sm:max-w-md lg:max-w-4xl p-5`}
+      className={`flex flex-col flex-shrink-0 max-sm:max-w-md max-md:max-w-xl md:max-w-2xl xl:max-w-5xl 2xl:max-w-6xlxl p-5`}
     >
       <Image
         alt="CardImage"
