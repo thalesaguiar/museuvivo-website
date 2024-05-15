@@ -6,6 +6,7 @@ import {
   faMapLocationDot,
   faTicket,
 } from "@fortawesome/free-solid-svg-icons";
+import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 
 const element = <FontAwesomeIcon icon={faClock} />;
 export default function InfoCard() {
@@ -16,18 +17,18 @@ export default function InfoCard() {
           <div style={{ margin: "20px" }}>
             <FontAwesomeIcon
               icon={faClock}
-              width={20}
-              height={30}
               color="#1C3162"
+              style={{ width: 30, height: 30 }}
             />
           </div>
           <div style={{ padding: "10px" }}>
             <h4 style={{ fontSize: "2rem", margin: 0 }}>
-              Abrimos Sexta, Sábado, Domingo e feriados.
+              Abrimos Sábado, Domingo e feriados.
             </h4>
             <p style={{ fontSize: "1.8rem", margin: 0 }}>
-              Horários: Sexta 18:30 as 21:00 <br /> Sábado, Domingo e Feriados
-              8:00 as 12:00 e 14:00 as 18:00.
+              Horários: Sábado, Domingo e Feriados 8:00 as 12:00 e 14:00 as
+              17:30. <br />
+              De segunda a quinta somente com horário agendado pelo WhatsApp.
             </p>
           </div>
         </div>
@@ -38,6 +39,7 @@ export default function InfoCard() {
               width={20}
               height={30}
               color="#1C3162"
+              style={{ width: 30, height: 30 }}
             />
           </div>
           <div style={{ padding: "10px" }}>
@@ -69,9 +71,8 @@ export default function InfoCard() {
           <div style={{ margin: "20px" }}>
             <FontAwesomeIcon
               icon={faTicket}
-              width={20}
-              height={30}
               color="#1C3162"
+              style={{ width: 30, height: 30 }}
             />
           </div>
           <div style={{ padding: "10px" }}>

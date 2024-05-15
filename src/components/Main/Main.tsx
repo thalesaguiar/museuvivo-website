@@ -1,3 +1,4 @@
+import { DropDownMenu } from "../Dropdown Menu/DropdownMenu";
 import ImageCard from "../ImageCard/ImageCard";
 import InfoCard from "../InfoCard/InfoCard";
 import style from "./Main.module.css";
@@ -5,6 +6,7 @@ export default function MainSection() {
   return (
     <>
       <div className={style.container}>
+        <DropDownMenu />
         <div>
           <InfoCard />
         </div>
