@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import CardImg1 from "../../../public/1.png";
 import CardImg2 from "../../../public/2.png";
@@ -14,10 +15,17 @@ import CardImg6T from "../../../public/6 Tablet.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { useRef } from "react";
 
 export default function ImageCard() {
   return (
-    <div className="flex flex-row w-full overflow-x-scroll no-scrollbar mb-20 md:ml-40 max-sm:ml-10 mt-10">
+    <div className="flex w-full flex-row overflow-x-scroll no-scrollbar mb-20 md:ml-40 max-sm:ml-10 mt-36">
+      <button className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-28 h-28 mt-48 ml-10 flex right-16 items-center justify-center">
+        <FontAwesomeIcon
+          icon={faArrowRight}
+          style={{ width: 20, height: 20 }}
+        />
+      </button>
       <div className="flex-shrink-0 max-w-4xl mr-10 max-sm:w-96">
         <Link href={"/IndiosBotocudos"}>
           <Image

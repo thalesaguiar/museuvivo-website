@@ -5,7 +5,8 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    background-color: white;
+    margin-top: 40;
   }
   .infoContainer {
     display: flex;
@@ -14,6 +15,7 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+    margin-top: 100px;
   }
   .title {
     font-size: 2rem;
@@ -33,7 +35,6 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 60px;
   }
   .infoContainer {
     display: flex;
@@ -63,7 +64,6 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 200px;
   }
   .infoContainer {
     display: flex;
