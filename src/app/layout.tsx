@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Junge } from "next/font/google";
+import { Roboto, Fira_Sans } from "next/font/google";
 import "./globals.css";
 
-const junge = Junge({
+const roboto = Fira_Sans({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className={junge.className}>
+    <html lang="pt-br" className={roboto.className}>
       <body>{children}</body>
     </html>
   );
