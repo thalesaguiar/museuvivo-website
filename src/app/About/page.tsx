@@ -20,7 +20,7 @@ export default function About() {
     <div className="w-full">
       <Menu />
       <section className="grid min-h-screen md:grid-cols-2">
-        <div className="bg-amber-50 flex flex-col justify-center items-center gap-2 max-md:hidden">
+        <div className="bg-#FFF7F0 flex flex-col justify-center items-center gap-2 max-md:hidden">
           <div className="mb-5">
             <h1 className="font-extrabold text-6xl tracking-tight text-center">
               Sobre o Museu Vivo
@@ -53,7 +53,7 @@ export default function About() {
       <section className="flex w-full bg-white">
         <div className="p-10 sm:m-36">
           <h2 className="text-5xl font-bold">Sobre o Museu</h2>
-          <p className="text-2xl tracking-wide leading-relaxed mt-8 text-start">
+          <p className="max-sm:text-2xl max-md:text-3xl max-lg:text-4xl lg:text-4xl  tracking-wide leading-relaxed text-start p-10">
             O Museu Vivo guarda e preserva riquezas que conta a história de
             personagens anônimos das cidades do Vale do Aço e do Brasil. O
             projeto começou na década de 1980, com o objetivo de um dia fundar
@@ -71,10 +71,10 @@ export default function About() {
         </div>
       </section>
 
-      <div className="grid min-h-screen md:grid-cols-2 gap-11 max-md:36 p-10">
+      <div className="grid md:grid-cols-2 gap-11 max-md:36 p-10 mb-24">
         <div>
           <h2 className="text-5xl font-bold">O início</h2>
-          <p className="text-2xl tracking-wide leading-relaxed mt-8 text-start">
+          <p className="max-sm:text-2xl max-md:text-3xl max-lg:text-4xl lg:text-4xl  tracking-wide leading-relaxed text-start p-10">
             O projeto começou na década de 1980, com o colecionador Jeová
             Aguiar, baiano que escolheu as terras mineiras para morar. Ao Chegar
             na região do Vale do Aço o colecionador se deparou com uma ideia de
@@ -89,9 +89,9 @@ export default function About() {
         </div>
         <Image src={Img2} alt="fig" />
       </div>
-      <div className="flex flex-col min-h-screen max-mdm:36 p-10">
+      <div className="flex flex-col max-mdm:36 p-10">
         <h2 className="text-5xl font-bold">O Acervo</h2>
-        <p className="text-2xl tracking-wide leading-relaxed mt-8 text-start">
+        <p className="max-sm:text-2xl max-md:text-3xl max-lg:text-4xl lg:text-4xl  tracking-wide leading-relaxed text-start p-10">
           Descubra a história viva do Vale do Aço no Museu Metropolitano. Nosso
           acervo abrange uma ampla gama de temas, desde a rica cultura dos
           indígenas Botocudos até os caminhos percorridos pelos tropeiros.
@@ -106,11 +106,11 @@ export default function About() {
         </p>
       </div>
       <div className="flex w-full overflow-x-scroll no-scrollbar mb-20">
-        <div className="flex w-96">
+        <div className="flex">
           <ImageCarrousel
-            Description="loren"
-            Title="Sinaleiro"
             ImageFile={Img1}
+            Title="Sinaleiro"
+            Description="Amplamente utilizado na Estrada de Ferro Vitória Minas, para sinalização férrea"
           />
           <ImageCarrousel
             Description="Utilizado no transporte de mercadorias, produção agrícola e pessoas,
@@ -139,33 +139,29 @@ export default function About() {
         </div>
       </div>
 
-      <h2 className="text-4xl font-bold pl-10 mb-6">
-        A Associação Cultural Museu Vivo
+      <h2 className="text-5xl font-bold pl-10 mb-6">
+        A Associação Cultural
+        <br /> Museu Vivo
       </h2>
-      <div className="flex w-full overflow-x-scroll no-scrollbar mb-20">
+      <div className="flex w-full overflow-x-scroll no-scrollbar mb-5">
         <div className="flex">
-          <ImageCarrousel
-            Description="loren"
-            Title="Sinaleiro"
-            ImageFile={ImgAss1}
-          />
-          <ImageCarrousel
-            Description="loren"
-            Title="Sinaleiro"
-            ImageFile={ImgAss2}
-          />
-          <ImageCarrousel
-            Description="loren"
-            Title="Sinaleiro"
-            ImageFile={ImgAss3}
-          />
-          <ImageCarrousel
-            Description="loren"
-            Title="Sinaleiro"
-            ImageFile={ImgAss4}
-          />
+          <ImageCarrousel ImageFile={ImgAss1} />
+          <ImageCarrousel ImageFile={ImgAss2} />
+          <ImageCarrousel ImageFile={ImgAss3} />
+          <ImageCarrousel ImageFile={ImgAss4} />
         </div>
       </div>
+      <p className="max-sm:text-2xl max-md:text-3xl max-lg:text-4xl lg:text-4xl  tracking-wide leading-relaxed text-start p-10">
+        A Associação Cultural Museu Vivo é um ponto de cultura proeminente na
+        cidade de Ipatinga e região. Realizamos uma variedade de eventos
+        culturais, incluindo o popular Café com Rapadura, um encontro mensal
+        gratuito geralmente realizado no último domingo do mês. Este evento é
+        uma celebração vibrante da cultura local, apresentando uma série de
+        atrações, como degustação de café adoçado com rapadura, entoação do hino
+        de Ipatinga, homenagens aos pioneiros da região, além de performances
+        musicais e danças tradicionais. Junte-se a nós para uma experiência
+        enriquecedora que celebra a rica herança cultural de nossa comunidade.
+      </p>
     </div>
   );
 }

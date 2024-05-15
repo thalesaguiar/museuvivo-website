@@ -17,8 +17,8 @@ import Link from "next/link";
 
 export default function ImageCard() {
   return (
-    <div className="flex flex-row w-full overflow-x-scroll no-scrollbar mb-20 ml-2 p-5">
-      <div className="flex-shrink-0 max-w-2xl mr-10 max-sm:w-96">
+    <div className="flex flex-row w-full overflow-x-scroll no-scrollbar mb-20 md:ml-40 max-sm:ml-10 mt-10">
+      <div className="flex-shrink-0 max-w-4xl mr-10 max-sm:w-96">
         <Link href={"/IndiosBotocudos"}>
           <Image
             alt="CardImage"
@@ -36,7 +36,7 @@ export default function ImageCard() {
           defender a sua terra e cultura.
         </p>
       </div>
-      <div className="flex-shrink-0 max-w-2xl mr-10 max-sm:w-96">
+      <div className="flex-shrink-0 max-w-4xl mr-10 max-sm:w-96">
         <Image
           alt="CardImage"
           src={CardImg6T}
@@ -50,7 +50,7 @@ export default function ImageCard() {
           doçe e do Brasil.
         </p>
       </div>
-      <div className="flex-shrink-0 max-w-2xl mr-10 max-sm:w-96">
+      <div className="flex-shrink-0 max-w-4xl mr-10 max-sm:w-96">
         <Image
           alt="CardImage"
           src={CardImg2T}
@@ -64,7 +64,7 @@ export default function ImageCard() {
           carvão vegetal.
         </p>
       </div>
-      <div className="flex-shrink-0 max-w-2xl mr-10 max-sm:w-96">
+      <div className="flex-shrink-0 max-w-4xl mr-10 max-sm:w-96">
         <Image
           alt="CardImage"
           src={CardImg3T}
@@ -82,7 +82,7 @@ export default function ImageCard() {
           trabalho.
         </p>
       </div>
-      <div className="flex-shrink-0 max-w-2xl mr-10 max-sm:w-96">
+      <div className="flex-shrink-0 max-w-4xl mr-10 max-sm:w-96">
         <Image
           alt="CardImage"
           src={CardImg4T}
@@ -97,7 +97,7 @@ export default function ImageCard() {
           suas vidas!
         </p>
       </div>
-      <div className="flex-shrink-0 max-w-2xl mr-10 max-sm:w-96">
+      <div className="flex-shrink-0 max-w-4xl mr-20 max-sm:w-96">
         <Image
           alt="CardImage"
           src={CardImg5T}
@@ -105,7 +105,7 @@ export default function ImageCard() {
           style={{ objectFit: "cover" }}
         />
         <h3 className="font-bold text-4xl mt-6 mb-2">Forja</h3>
-        <p className="text-2xl md:text-3xl">
+        <p className="text-2xl md:text-3xl md:pr-20">
           O ofício do fogo, um dos mais antigos ofícios da humanidade, se
           confunde com uma arte, onde o ferreiro molda o metal de acordo com a
           sua vontade, o fogo e a força é o meio pelo qual ele exerce a mesma.
