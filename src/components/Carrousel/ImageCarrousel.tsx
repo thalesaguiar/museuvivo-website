@@ -1,3 +1,4 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 import CardImg1T from "../../../public/1 Tablet.png";
 import CardImg2T from "../../../public/2 Tablet.png";
@@ -6,8 +7,9 @@ import CardImg4T from "../../../public/4 Tablet.png";
 import CardImg5T from "../../../public/5 Tablet.png";
 import CardImg6T from "../../../public/6 Tablet.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { useRef } from "react";
 
 type Props = {
   ImageFile: StaticImageData;
@@ -22,7 +24,7 @@ export default function ImageCarrousel({
 }: Props) {
   return (
     <div
-      className={`flex flex-col flex-shrink-0 max-sm:max-w-md max-md:max-w-xl md:max-w-2xl xl:max-w-5xl 2xl:max-w-6xlxl p-5`}
+      className={`flex flex-col flex-shrink-0 max-sm:max-w-md max-md:max-w-xl md:max-w-2xl xl:max-w-5xl 2xl:max-w-6xlxl p-5 group`}
     >
       <Image
         alt="CardImage"

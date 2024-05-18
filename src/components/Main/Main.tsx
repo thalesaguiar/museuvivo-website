@@ -32,9 +32,7 @@ export default function MainSection() {
           Veja todas as exposições
         </p> */}
         </div>
-        <div>
-          <ImageCard />
-        </div>
+        <ImageCard />
       </div>
     </>
   );
