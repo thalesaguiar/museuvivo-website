@@ -13,18 +13,46 @@ import CardImg4T from "../../../public/4 Tablet.png";
 import CardImg5T from "../../../public/5 Tablet.png";
 import CardImg6T from "../../../public/6 Tablet.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function ImageCard() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  function handleCarrouselScrollFoward() {
+    scrollRef.current?.scrollBy({
+      left: 550,
+      behavior: "smooth",
+    });
+  }
+
+  function handleCarrouselScrollBack() {
+    scrollRef.current?.scrollBy({
+      left: -550,
+      behavior: "smooth",
+    });
+  }
+
   return (
-    <div className="flex w-full flex-row overflow-x-scroll no-scrollbar mb-20 md:ml-40 max-sm:ml-10 mt-36">
-      <button className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-28 h-28 mt-48 ml-10 flex right-16 items-center justify-center">
+    <div
+      ref={scrollRef}
+      className="flex w-full flex-row overflow-x-scroll no-scrollbar mb-20 max-sm:ml-10 mt-36 group"
+    >
+      <button
+        className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-48 ml-10 flex right-16 items-center justify-center opacity-0 group-hover:opacity-100"
+        onClick={() => handleCarrouselScrollFoward()}
+      >
         <FontAwesomeIcon
           icon={faArrowRight}
           style={{ width: 20, height: 20 }}
         />
+      </button>
+      <button
+        className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-48 ml-10 flex right-0 left-0 items-center justify-center opacity-0 group-hover:opacity-100"
+        onClick={() => handleCarrouselScrollBack()}
+      >
+        <FontAwesomeIcon icon={faArrowLeft} style={{ width: 20, height: 20 }} />
       </button>
       <div className="flex-shrink-0 max-w-4xl mr-10 max-sm:w-96">
         <Link href={"/IndiosBotocudos"}>
