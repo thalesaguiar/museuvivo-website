@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import IMG from "../../../public/museum1x.jpg";
 import Img2 from "../../../public/IMG_20191116_155513-1024x592.jpg";
@@ -14,8 +15,41 @@ import ImgAss1 from "../../../public/ass1.png";
 import ImgAss2 from "../../../public/ass2.png";
 import ImgAss3 from "../../../public/ass3.png";
 import ImgAss4 from "../../../public/ass6.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
 
 export default function About() {
+  const scrollRefA = useRef<HTMLDivElement>(null);
+  const scrollRefB = useRef<HTMLDivElement>(null);
+
+  function handleCarrouselAScrollFoward() {
+    scrollRefA.current?.scrollBy({
+      left: 550,
+      behavior: "smooth",
+    });
+  }
+
+  function handleCarrouselAScrollBack() {
+    scrollRefA.current?.scrollBy({
+      left: -550,
+      behavior: "smooth",
+    });
+  }
+
+  function handleCarrouselBScrollFoward() {
+    scrollRefB.current?.scrollBy({
+      left: 550,
+      behavior: "smooth",
+    });
+  }
+
+  function handleCarrouselBScrollBack() {
+    scrollRefB.current?.scrollBy({
+      left: -550,
+      behavior: "smooth",
+    });
+  }
   return (
     <div className="w-full">
       <Menu />
@@ -105,7 +139,28 @@ export default function About() {
           rica herança cultural do Vale do Aço.
         </p>
       </div>
-      <div className="flex w-full overflow-x-scroll no-scrollbar mb-20">
+      <div
+        className="flex w-full overflow-x-scroll no-scrollbar mb-20 group"
+        ref={scrollRefA}
+      >
+        <button
+          className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-80 ml-10 flex right-16 items-center justify-center opacity-0 group-hover:opacity-100"
+          onClick={() => handleCarrouselAScrollFoward()}
+        >
+          <FontAwesomeIcon
+            icon={faArrowRight}
+            style={{ width: 20, height: 20 }}
+          />
+        </button>
+        <button
+          className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-80 ml-10 flex right-0 left-0 items-center justify-center opacity-0 group-hover:opacity-100"
+          onClick={() => handleCarrouselAScrollBack()}
+        >
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            style={{ width: 20, height: 20 }}
+          />
+        </button>
         <div className="flex">
           <ImageCarrousel
             ImageFile={Img1}
@@ -143,8 +198,29 @@ export default function About() {
         A Associação Cultural
         <br /> Museu Vivo
       </h2>
-      <div className="flex w-full overflow-x-scroll no-scrollbar mb-5">
+      <div
+        className="flex w-full overflow-x-scroll no-scrollbar mb-5 group"
+        ref={scrollRefB}
+      >
         <div className="flex">
+          <button
+            className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-80 ml-10 flex right-16 items-center justify-center opacity-0 group-hover:opacity-100"
+            onClick={() => handleCarrouselBScrollFoward()}
+          >
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              style={{ width: 20, height: 20 }}
+            />
+          </button>
+          <button
+            className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-80 ml-10 flex right-0 left-0 items-center justify-center opacity-0 group-hover:opacity-100"
+            onClick={() => handleCarrouselBScrollBack()}
+          >
+            <FontAwesomeIcon
+              icon={faArrowLeft}
+              style={{ width: 20, height: 20 }}
+            />
+          </button>
           <ImageCarrousel ImageFile={ImgAss1} />
           <ImageCarrousel ImageFile={ImgAss2} />
           <ImageCarrousel ImageFile={ImgAss3} />
