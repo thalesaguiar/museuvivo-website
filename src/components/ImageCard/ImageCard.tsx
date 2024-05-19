@@ -37,10 +37,10 @@ export default function ImageCard() {
   return (
     <div
       ref={scrollRef}
-      className="flex w-full flex-row overflow-x-scroll no-scrollbar mb-20 max-sm:ml-10 mt-36 group"
+      className="flex w-full flex-row overflow-x-scroll no-scrollbar mb-20 max-sm:ml-10 mt-36 group pl-14"
     >
       <button
-        className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-48 ml-10 flex right-16 items-center justify-center opacity-0 group-hover:opacity-100"
+        className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-48 ml-10 flex right-16 items-center justify-center opacity-0 group-hover:opacity-100 max-lg:hidden"
         onClick={() => handleCarrouselScrollFoward()}
       >
         <FontAwesomeIcon
@@ -49,7 +49,7 @@ export default function ImageCard() {
         />
       </button>
       <button
-        className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-48 ml-10 flex right-0 left-0 items-center justify-center opacity-0 group-hover:opacity-100"
+        className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-full absolute w-20 h-20 mt-48 ml-10 flex right-0 left-0 items-center justify-center opacity-0 group-hover:opacity-100 max-lg:hidden"
         onClick={() => handleCarrouselScrollBack()}
       >
         <FontAwesomeIcon icon={faArrowLeft} style={{ width: 20, height: 20 }} />
