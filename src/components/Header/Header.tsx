@@ -4,7 +4,6 @@ import Image from "next/image";
 import MuseumPic from "../../../public/museum1x.jpg";
 import MuseumPic2 from "../../../public/museum2x.jpg";
 import styles from "./Header.module.css";
-import Button from "../Button";
 import Script from "next/script";
 
 export default function Header() {
@@ -43,10 +42,11 @@ export default function Header() {
           priority
         />
       </div>
-      <div className={styles.textWrapper}>
-        <p className={styles.letter}>ΓNΩθΙ ΣΕΑΥΤΟΝ</p>
+      <div className="absolute z-50">
+        <p className="relative z-10 text-6xl text-amber-400 opacity-90">
+          ΓNΩθΙ ΣΕΑΥΤΟΝ
+        </p>
       </div>
-      <Button />
     </div>
   );
 }

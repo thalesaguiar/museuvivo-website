@@ -6,7 +6,7 @@
   overflow: "hidden";
   height: 100vh;
   background-color: black;
-  z-index: -2;
+  z-index: -1;
 }
 
 @media (min-width: 157px) {
