@@ -256,7 +256,7 @@ export default function About() {
         <Image src={Img12} alt="te" className="rounded-lg" />
       </div>
       <div className=" lg:grid-cols-2 grid min-h-screen mt-16 p-12">
-        <Image src={Img13} alt="te" className="rounded-lg" />
+        <Image src={Img13} alt="te" className="rounded-lg" quality={40} />
         <p className="max-sm:text-2xl max-md:text-3xl max-lg:text-4xl lg:text-3xl  tracking-wide leading-relaxed text-start p-10">
           A Associação Cultural Museu Vivo é um ponto de cultura proeminente na
           cidade de Ipatinga e região. Realizamos uma variedade de eventos
@@ -276,15 +276,60 @@ export default function About() {
           <br /> Museu Vivo nos jornais
         </h2>
         <div className=" w-full grid grid-cols-3 max-md:grid-cols-1 items-center justify-center p-10">
-          <Image src={Doc1} alt="teste" className="rounded-md p-5" />
-          <Image src={Doc2} alt="teste" className="rounded-md p-5" />
-          <Image src={Doc3} alt="teste" className="rounded-md p-5" />
-          <Image src={Doc4} alt="teste" className="rounded-md p-5" />
-          <Image src={Doc5} alt="teste" className="rounded-md p-5" />
-          <Image src={Doc6} alt="teste" className="rounded-md p-5" />
-          <Image src={Doc7} alt="teste" className="rounded-md p-5" />
-          <Image src={Doc8} alt="teste" className="rounded-md p-5" />
-          <Image src={Doc9} alt="teste" className="rounded-md p-5" />
+          <Image
+            src={Doc1}
+            alt="teste"
+            className="rounded-md p-5"
+            quality={40}
+          />
+          <Image
+            src={Doc2}
+            alt="teste"
+            className="rounded-md p-5"
+            quality={40}
+          />
+          <Image
+            src={Doc3}
+            alt="teste"
+            className="rounded-md p-5"
+            quality={40}
+          />
+          <Image
+            src={Doc4}
+            alt="teste"
+            className="rounded-md p-5"
+            quality={40}
+          />
+          <Image
+            src={Doc5}
+            alt="teste"
+            className="rounded-md p-5"
+            quality={40}
+          />
+          <Image
+            src={Doc6}
+            alt="teste"
+            className="rounded-md p-5"
+            quality={40}
+          />
+          <Image
+            src={Doc7}
+            alt="teste"
+            className="rounded-md p-5"
+            quality={40}
+          />
+          <Image
+            src={Doc8}
+            alt="teste"
+            className="rounded-md p-5"
+            quality={40}
+          />
+          <Image
+            src={Doc9}
+            alt="teste"
+            className="rounded-md p-5"
+            quality={40}
+          />
         </div>
       </div>
     </div>

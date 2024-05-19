@@ -29,7 +29,7 @@ export default function ImageCarrousel({
       <Image
         alt="CardImage"
         src={ImageFile}
-        quality={70}
+        quality={40}
         style={{ borderRadius: 5 }}
       />
       <Link href={"/IndiosBotocudos"}>
