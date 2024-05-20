@@ -28,7 +28,7 @@ const route = [
   },
   {
     title: "Sobre",
-    href: "Sobre",
+    href: "sobre",
     Icon: "IconBase",
   },
 ];
