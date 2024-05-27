@@ -115,7 +115,7 @@ export default function About() {
           </p>
         </div>
       </section>
-      <Divider />
+      <Divider bgColor="black" />
       <div className="grid md:grid-cols-2 gap-11 max-md:36 p-10 mb-24">
         <div>
           <h2 className="text-5xl font-bold ml-10">O início</h2>
@@ -134,7 +134,7 @@ export default function About() {
         </div>
         <Image src={Img2} alt="fig" />
       </div>
-      <Divider />
+      <Divider bgColor="black" />
       <div className="flex flex-col max-mdm:36 p-10">
         <h2 className="text-5xl font-bold ml-10">O Acervo</h2>
         <p className="max-sm:text-2xl max-md:text-3xl max-lg:text-4xl lg:text-3xl  tracking-wide leading-relaxed text-start p-10">
@@ -205,7 +205,7 @@ export default function About() {
           />
         </div>
       </div>
-      <Divider />
+      <Divider bgColor="black" />
 
       <h2 className="text-5xl font-bold pl-10 mb-32">
         A Associação Cultural
@@ -270,7 +270,7 @@ export default function About() {
           comunidade.
         </p>
       </div>
-      <Divider />
+      <Divider bgColor="black" />
       <div>
         <h2 className="text-5xl font-bold pl-10 mb-32 text-center">
           <br /> Museu Vivo nos jornais
