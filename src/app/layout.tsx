@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Roboto, Fira_Sans, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-export const roboto = Fira_Sans({
+const roboto = Fira_Sans({
   weight: ["400", "300", "200", "700"],
   subsets: ["latin"],
   display: "swap",
