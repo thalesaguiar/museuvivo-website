@@ -83,7 +83,7 @@ export default function ImageCard() {
         <p className="text-2xl md:text-3xl">
           Os resposáveis pelo transporte de mercadorias e informações, fundaram
           muitas vilas que vieram a se tornas cidades na região do vale do Rio
-          doçe e do Brasil.
+          Doce e do Brasil.
         </p>
       </div>
       <div className="flex-shrink-0 max-w-4xl mr-10 max-sm:w-96">
