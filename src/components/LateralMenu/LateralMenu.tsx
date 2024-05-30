@@ -51,13 +51,13 @@ export function LateralMenu() {
         </a>
         <a
           className={`${dm_Sans.className} text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
-          href="/Sobre"
+          href="/"
         >
           Acervo
         </a>
         <a
           className={`${dm_Sans.className} text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
-          href="/"
+          href="/Sobre"
         >
           Sobre
         </a>
