@@ -3,7 +3,6 @@ import Image from "next/image";
 import IMG from "../../../public/museum1x.jpg";
 import Img2 from "../../../public/IMG_20191116_155513-1024x592.jpg";
 import Menu from "@/components/Menu/Menu";
-import ImageCard from "@/components/ImageCard/ImageCard";
 import ImageCarrousel from "@/components/Carrousel/ImageCarrousel";
 import Img1 from "../../../public/IMG_0900.png";
 import Img2a from "../../../public/IMG_20201202_194644_391.jpg";
@@ -29,6 +28,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useRef } from "react";
 import { Divider } from "@/components/Divider/Divider";
+import { LateralMenu } from "@/components/LateralMenu/LateralMenu";
+import { DropDownMenu } from "@/components/Dropdown Menu/DropdownMenu";
 
 export default function About() {
   const scrollRefA = useRef<HTMLDivElement>(null);
@@ -63,6 +64,7 @@ export default function About() {
   }
   return (
     <div className="w-full">
+      <DropDownMenu />
       <Menu />
       <section className="grid min-h-screen md:grid-cols-2">
         <div className="bg-#FFF7F0 flex flex-col justify-center items-center gap-2 max-md:hidden">
