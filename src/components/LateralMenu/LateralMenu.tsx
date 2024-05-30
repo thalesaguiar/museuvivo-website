@@ -24,9 +24,11 @@ const route = [
   },
 ];
 
+const show = true;
+
 export function LateralMenu() {
-  return (
-    <div className=" flex -z-0 bg-neutral-900 w-1/3 h-dvh absolute top-0 left-100 bottom-0 right-0 mt-96">
+  return show ? (
+    <div className=" flex fixed right-0 left-100 bottom-0 z-50 bg-neutral-900 w-1/3 h-full">
       <div className="flex w-full h-full justify-center flex-col p-20">
         <p className="text-2xl font-semibold opacity-70 text-white ml-5">
           Menu
@@ -59,5 +61,7 @@ export function LateralMenu() {
         </div>
       </div>
     </div>
+  ) : (
+    <div className=" hidden" />
   );
 }
