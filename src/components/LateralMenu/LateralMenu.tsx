@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Divider } from "../Divider/Divider";
-import { dm_Sans } from "@/app/layout";
 const route = [
   {
     title: "Inicio",
@@ -32,31 +31,31 @@ export function LateralMenu() {
     <div className="flex justify-between fixed right-0 left-100 bottom-0 z-50 bg-neutral-900 w-2/5 max-sm:w-full h-full md:px-32 md:py-20">
       <div className="flex w-full h-full justify-center flex-col max-sm:p-10">
         <p
-          className={` ${dm_Sans.className} text-2xl font-semibold opacity-70 text-white ml-5 mt-20 `}
+          className={`text-2xl font-semibold opacity-70 text-white ml-5 mt-20 `}
         >
           MENU
         </p>
         <Divider bgColor="white" />
         <a
-          className={`${dm_Sans.className} text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
+          className={`text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
           href="/"
         >
           Inicio
         </a>
         <a
-          className={`${dm_Sans.className} text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
+          className={` text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
           href="/"
         >
           Ingresso
         </a>
         <a
-          className={`${dm_Sans.className} text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
+          className={` text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
           href="/"
         >
           Acervo
         </a>
         <a
-          className={`${dm_Sans.className} text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
+          className={`text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
           href="/Sobre"
         >
           Sobre
@@ -64,7 +63,7 @@ export function LateralMenu() {
         <div className="flex w-full items-center justify-center mt-20 mb-10 sm:hidden">
           <div className={`w-11/12 h-0.5 rounded-xl opacity-20 bg-white`}></div>
         </div>
-        <div className="flex ml-5">
+        <div className="flex maxsm:ml-10 max-md:ml-5">
           <p className="text-xl font-semibold opacity-70 text-white mt-20 mb-5">
             REDES SOCIAIS
           </p>

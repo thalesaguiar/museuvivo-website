@@ -9,7 +9,7 @@ const roboto = Fira_Sans({
   display: "swap",
 });
 
-export const dm_Sans = DM_Sans({
+const dm_Sans = DM_Sans({
   weight: ["400", "300", "200", "700", "600"],
   subsets: ["latin"],
   display: "optional",
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={roboto.className}>
-      <body>{children}</body>
+      <body className={dm_Sans.className}>{children}</body>
     </html>
   );
 }
