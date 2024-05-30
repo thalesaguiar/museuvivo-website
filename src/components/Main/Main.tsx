@@ -1,6 +1,7 @@
 import { DropDownMenu } from "../Dropdown Menu/DropdownMenu";
 import ImageCard from "../ImageCard/ImageCard";
 import InfoCard from "../InfoCard/InfoCard";
+import { LateralMenu } from "../LateralMenu/LateralMenu";
 import style from "./Main.module.css";
 export default function MainSection() {
   return (
