@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Roboto, Fira_Sans, DM_Sans } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const roboto = Fira_Sans({
   weight: ["400", "300", "200", "700"],
@@ -26,6 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={roboto.className}>
+      <Head>
+        <link rel="icon" href="'../../public/favicon.ico'" />
+      </Head>
       <body className={dm_Sans.className}>{children}</body>
     </html>
   );
