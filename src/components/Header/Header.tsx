@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import MuseumPic from "../../../public/museum1x.jpg";
-import MuseumPic2 from "../../../public/museum2x.jpg";
+import MuseumPic2 from "../../../public/Design sem nome (11).png";
 import styles from "./Header.module.css";
 import Script from "next/script";
 
@@ -32,7 +32,8 @@ export default function Header() {
           <Script src="https://player.vimeo.com/api/player.js" async></Script>
         </div>
       </div>
-      <div className={styles.mobileContainer}>
+      <div className="absolute w-full h-full lg:hidden">
+        <div className="bg-black absolute z-50 w-full h-full opacity-35" />
         <Image
           src={MuseumPic2}
           alt="Fachada do museu"
@@ -43,7 +44,7 @@ export default function Header() {
         />
       </div>
       <div className="absolute z-50">
-        <p className="relative z-10 text-6xl text-amber-400 opacity-90">
+        <p className="relative z-10 text-6xl text-amber-400 opacity-90 max-sm:text-5xl">
           ΓNΩθΙ ΣΕΑΥΤΟΝ
         </p>
       </div>
