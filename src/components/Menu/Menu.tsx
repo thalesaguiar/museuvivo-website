@@ -1,14 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import styles from "./Menu.module.css";
-import Image from "next/image";
-import Logo from "../../../public/LOGOM.svg";
-import MenuSvg from "../../../public/menu.svg";
-import Link from "next/link";
-import { useClickAway } from "react-use";
-import { useRef } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { Squash as Hamburger } from "hamburger-react";
 
 const route = [
   {
@@ -35,39 +26,23 @@ const route = [
 
 export default function Menu() {
   const [isOpen, setOpen] = useState(false);
-  const ref = useRef(null);
-
-  useClickAway(ref, () => setOpen(false));
 
   return (
-    <header>
-      <div className={styles.container}>
-        <div className={styles.svgContainer}>
-          <Image src={Logo} alt="Logo do Museu" className={styles.logo} />
-        </div>
-        <div className={styles.desktopNav}>
-          {route.map((route) => {
-            const { Icon } = route;
-
-            return (
-              <p className={styles.navText} key={route.title}>
-                <a href={route.href}>
-                  <span>{route.title}</span>
-                </a>
-              </p>
-            );
-          })}
-        </div>
-        <div ref={ref} className={styles.customlist}>
-          <Hamburger
-            toggled={isOpen}
-            size={20}
-            onToggle={setOpen}
-            color="#fff"
-          />
-        </div>
+    <div className=" absolute top-0 right-0 mt-10 mr-10">
+      <button
+        onClick={() => console.log("Menu: Botão menu")}
+        className="flex flex-row lg:hidden"
+      >
+        <div className="bg-white w-2 h-2 rounded-full mt-3 mr-5" />
+        <p className="text-3xl text-white"> Menu</p>
+      </button>
+      <div className="flex-row hidden lg:flex">
+        <a href="/Sobre" className="text-3xl text-white mr-16 cursor-pointer">
+          Sobre
+        </a>
+        <a className="text-3xl text-white mr-16 cursor-pointer"> Ingresso</a>
+        <a className="text-3xl text-white mr-10 cursor-pointer"> Contato</a>
       </div>
-      {isOpen}
-    </header>
+    </div>
   );
 }
