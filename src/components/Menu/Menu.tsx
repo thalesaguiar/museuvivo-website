@@ -41,11 +41,16 @@ export default function Menu() {
         <Image alt="Logo" src={Logo} width={180} className="ml-12" />
       </div>
       <div className="flex-row hidden md:flex">
-        <a href="/Sobre" className="text-3xl text-white mr-16 cursor-pointer">
-          Sobre
+      <a href="/" className="text-3xl max-lg:text-2xl text-white md:mr-12 cursor-pointer">
+          Inicio
         </a>
-        <a className="text-3xl text-white mr-16 cursor-pointer"> Ingresso</a>
-        <a className="text-3xl text-white mr-10 cursor-pointer"> Contato</a>
+        <a href="/" className="text-3xl max-lg:text-2xl text-white md:mr-12 cursor-pointer">
+        Sobre
+        </a>
+        <a href="/" className="text-3xl max-lg:text-2xl text-white md:mr-12 cursor-pointer">
+        Ingresso</a>
+        <a href="/" className="text-3xl max-lg:text-2xl text-white md:mr-12 cursor-pointer">
+        Contato</a>
       </div>
     </div>
   );
