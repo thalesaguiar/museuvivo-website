@@ -44,7 +44,7 @@ export default function Menu() {
       <a href="/" className="text-3xl max-lg:text-2xl text-white md:mr-12 cursor-pointer">
           Inicio
         </a>
-        <a href="/" className="text-3xl max-lg:text-2xl text-white md:mr-12 cursor-pointer">
+        <a href="/Sobre" className="text-3xl max-lg:text-2xl text-white md:mr-12 cursor-pointer">
         Sobre
         </a>
         <a href="/" className="text-3xl max-lg:text-2xl text-white md:mr-12 cursor-pointer">
