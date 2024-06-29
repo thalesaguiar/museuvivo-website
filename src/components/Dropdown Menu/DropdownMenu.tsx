@@ -27,7 +27,7 @@ export function DropDownMenu() {
       <div className={`${showLateralMenu ? "" : "hidden"}`}>
         <LateralMenu />
       </div>
-      <div className="flex fixed w-36 h-36 max-sm:w-28 max-sm:h-28 bg-indigo-900 top-10 left-100 right-10 bottom-0 rounded-full justify-center items-center z-50 mt-2">
+      <div className="flex fixed w-36 h-36 max-sm:w-28 max-sm:h-28 bg-slate-800 top-10 left-100 right-10 bottom-0 rounded-full justify-center items-center z-50 mt-2">
         <button
           onClick={() => {
             handleShowMenu();

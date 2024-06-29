@@ -4,9 +4,9 @@ import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 export function FooterSection() {
   return (
     <>
-      <div className="bg-slate-700 flex w-full h-[250px] p-10 flex-col gap-5">
-        <div>
-          <Image alt="museum logo" src={Logo} width={180} />
+      <div className="bg-slate-700 flex w-full sm:h-[250px] p-10 flex-col gap-5">
+        <div className='max-sm:flex max-sm:justify-center'>
+          <Image alt="museum logo" src={Logo} className='w-72 max-sm:w-64' />
         </div>
         <div className="flex w-full items-center justify-center gap-10 mt-16">
           <div className="cursor-pointer">
@@ -27,7 +27,7 @@ export function FooterSection() {
           </div>
         </div>
       </div>
-      <div className="bg-slate-800 w-full h-20 flex text-2xl text-gray-50 items-center justify-center">
+      <div className="bg-slate-800 w-full h-20 flex text-2xl max-sm:text-xl text-gray-50 items-center justify-center">
         &copy; Associação Cultural Museu Vivo - {new Date().getFullYear()}
       </div>
     </>
