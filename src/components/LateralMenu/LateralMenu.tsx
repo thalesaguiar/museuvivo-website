@@ -43,22 +43,16 @@ export function LateralMenu() {
           Inicio
         </a>
         <a
-          className={` text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
-          href="/"
-        >
-          Ingresso
-        </a>
-        <a
-          className={` text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
-          href="/"
-        >
-          Acervo
-        </a>
-        <a
           className={`text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
           href="/Sobre"
         >
           Sobre
+        </a>
+        <a
+          className={` text-8xl p-5 max-sm:text-6xl text-white font-sans font-medium hover:motion-safe:animate-pulse`}
+          href="/"
+        >
+          Contato
         </a>
         <div className="flex w-full items-center justify-center mt-20 mb-10 sm:hidden">
           <div className={`w-11/12 h-0.5 rounded-xl opacity-20 bg-white`}></div>
