@@ -29,9 +29,6 @@ export default function MainSection() {
           >
             Em exposição
           </p>
-          {/* <p style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
-          Veja todas as exposições
-        </p> */}
         </div>
         <ImageCard />
       </div>
