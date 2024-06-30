@@ -28,8 +28,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useRef } from "react";
 import { Divider } from "@/components/Divider/Divider";
-import { LateralMenu } from "@/components/LateralMenu/LateralMenu";
 import { DropDownMenu } from "@/components/Dropdown Menu/DropdownMenu";
+import { FooterSection } from '@/components/Footer/Footer';
 
 export default function About() {
   const scrollRefA = useRef<HTMLDivElement>(null);
@@ -334,6 +334,7 @@ export default function About() {
           />
         </div>
       </div>
+      <FooterSection/>
     </div>
   );
 }
